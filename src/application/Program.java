@@ -22,6 +22,11 @@ public class Program {
 		System.out.println("\n=== TEST 2: seller findByDepartment ===");
 		Department department = new Department(3, null);
 		List<Seller> list = sellerDao.findByDepartment(department);
+		list.forEach(System.out::println);
+		
+		
+		System.out.println("\n=== TEST 3: seller findByDepartment ===");
+		list = sellerDao.findAll();
 		
 		list.forEach(System.out::println);
 		
