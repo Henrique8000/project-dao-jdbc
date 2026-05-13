@@ -1,5 +1,6 @@
 package application;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -27,8 +28,12 @@ public class Program {
 		
 		System.out.println("\n=== TEST 3: seller findByDepartment ===");
 		list = sellerDao.findAll();
-		
 		list.forEach(System.out::println);
+		
+		System.out.println("\n=== TEST 4: seller insert ===");
+		Seller newSeller = new Seller(null, "Henrique", "henrique@gmail.com", new Date(), 2800.00, department);
+		sellerDao.insert(newSeller);
+		System.out.println("Inserted!");
 		
 	}
 
