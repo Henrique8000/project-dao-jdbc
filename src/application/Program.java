@@ -32,20 +32,20 @@ public class Program {
 		list = sellerDao.findAll();
 		list.forEach(System.out::println);
 		
-		/*
+		
 		System.out.println("\n=== TEST 4: seller insert ===");
 		Seller newSeller = new Seller(null, "Henrique", "henrique@gmail.com", new Date(), 2800.00, department);
 		sellerDao.insert(newSeller);
 		System.out.println("Inserted!");
-		*/
 		
-		/*
+		
+		
 		System.out.println("\n=== TEST 5: seller update ===");
 		seller = sellerDao.findById(1);
 		seller.setName("Edison Arantes");
 		sellerDao.update(seller);
 		System.out.println("Updated completed");
-		*/
+		
 		
 		System.out.println("\n=== TEST 6: seller delete ===");
 		System.out.print("Enter id for delete test: ");
